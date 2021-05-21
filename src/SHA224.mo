@@ -31,7 +31,7 @@ module {
     0xffc00b31, 0x68581511, 0x64f98fa7, 0xbefa4fa4,
   ];
 
-  // Calculate a SHA224 hash.
+  /// Calculate a SHA224 hash.
   public func sha224(data : [Nat8]) : [Nat8] {
     let digest = Digest();
     digest.write(data);

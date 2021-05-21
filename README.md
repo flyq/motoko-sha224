@@ -39,15 +39,15 @@ the README.
 ## Checklist
 
 ### Check the initial setup works
-- [ ] Make sure you've installed [`vessel`](https://github.com/dfinity/vessel)
-- [ ] Make sure you've installed [`wasmtime`](https://wasmtime.dev/)
-- [ ] Make sure `make all` runs succesfully. If it doesn't please [open an issue](https://github.com/kritzcreek/motoko-library-template)
+- [x] Make sure you've installed [`vessel`](https://github.com/dfinity/vessel)
+- [x] Make sure you've installed [`wasmtime`](https://wasmtime.dev/)
+- [x] Make sure `make all` runs succesfully. If it doesn't please [open an issue](https://github.com/kritzcreek/motoko-library-template)
 
 ### Licensing
-- [ ] This template comes with a copy of the Apache License Version
+- [x] This template comes with a copy of the Apache License Version
       2.0, if you'd like to use a different license, replace the
       LICENSE file.
-- [ ] Change the License section in the README to reference your
+- [x] Change the License section in the README to reference your
       libraries name
 
 ### Host library documentation on Github Pages
@@ -56,12 +56,12 @@ If you'd like to automatically build and host library documentation
 whenever you push a git tag, follow these steps. Otherwise delete
 `.github/workflows/release.yml`, the `gh-pages` branch, and the API Documentation section in the README.
 
-- [ ] Turn on [Github Pages](https://pages.github.com/) in the Settings for your repo under:
+- [x] Turn on [Github Pages](https://pages.github.com/) in the Settings for your repo under:
       `Settings -> GitHub Pages -> Source -> Pick the "gh-pages" branch`
-- [ ] Change the Url in the `API Documentation` section in your project
+- [x] Change the Url in the `API Documentation` section in your project
 
 ### Finishing touches
-- [ ] Check out the "How to develop" and "How to publish" sections in the
+- [x] Check out the "How to develop" and "How to publish" sections in the
       README and finally delete the Checklist section from the
       README
 
