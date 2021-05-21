@@ -27,12 +27,12 @@ module {
   ];
 
   private let S : [Nat32] = [
-    0x6a09e667, 0xbb67ae85, 0x3c6ef372, 0xa54ff53a,
-    0x510e527f, 0x9b05688c, 0x1f83d9ab, 0x5be0cd19,
+    0xc1059ed8, 0x367cd507, 0x3070dd17, 0xf70e5939,
+    0xffc00b31, 0x68581511, 0x64f98fa7, 0xbefa4fa4,
   ];
 
-  // Calculate a SHA256 hash.
-  public func sha256(data : [Nat8]) : [Nat8] {
+  // Calculate a SHA224 hash.
+  public func sha224(data : [Nat8]) : [Nat8] {
     let digest = Digest();
     digest.write(data);
     return digest.sum();
@@ -121,7 +121,11 @@ module {
           hash[4 * i + j] := Nat8.fromIntWrap(Nat32.toNat(s[i] >> k));
         };
       };
-      return Array.freeze<Nat8>(hash);
+      let hash224 = Array.init<Nat8>(28, 0);
+      for (i in Iter.range(0, 27)) {
+        hash224[i] := hash[i];
+      };
+      return Array.freeze<Nat8>(hash224);
     };
 
     private func block(data : [Nat8]) {
