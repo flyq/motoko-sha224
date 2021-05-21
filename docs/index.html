@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head title="Motoko docs"><meta charset="UTF-8"/><link href="styles.css" rel="stylesheet"/></head><div class="index-container"><h1 class="index-header">Index of modules</h1><ul class="index-listing"><li class="index-item"><a class="index-item-link" href="SHA224.html">SHA224</a><div class="index-item-comment"><p>A sha224 library</p>
-<p>implements the SHA224 hash algorithms as defined in FIPS 180-4.
-it's used to calculate account identifier from principal.</p>
+<p>implements the SHA224 hash algorithms as defined in FIPS 180-4.</p>
+<p>it's used to calculate account identifier from principal.</p>
 <pre class="motoko"><code class="motoko">import SHA224 &quot;mo:sha224/SHA224&quot;;
 import Array &quot;mo:base/Array&quot;;
 
@@ -12,4 +12,5 @@ let expect = [
     179, 143, 123, 218, 1, 86, 41,
     107, 211, 100, 186, 47, 135, 139,
     ] : [Nat8];
- assert(Array.equal(SHA224.sha224(data), expect, Nat8.equal));</code></pre></div></li></ul></div></html>
+
+assert(Array.equal(SHA224.sha224(data), expect, Nat8.equal));</code></pre></div></li></ul></div></html>

@@ -1,6 +1,7 @@
 /// A sha224 library
 /// 
 /// implements the SHA224 hash algorithms as defined in FIPS 180-4.
+/// 
 /// it's used to calculate account identifier from principal.
 ///
 /// ```motoko
@@ -14,7 +15,8 @@
 ///     179, 143, 123, 218, 1, 86, 41,
 ///     107, 211, 100, 186, 47, 135, 139,
 ///     ] : [Nat8];
-///  assert(Array.equal(SHA224.sha224(data), expect, Nat8.equal));
+///
+/// assert(Array.equal(SHA224.sha224(data), expect, Nat8.equal));
 /// ```
 
 
