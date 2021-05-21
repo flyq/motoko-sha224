@@ -1,3 +1,23 @@
+/// A sha224 library
+/// 
+/// implements the SHA224 hash algorithms as defined in FIPS 180-4.
+/// it's used to calculate account identifier from principal.
+///
+/// ```motoko
+/// import SHA224 "mo:sha224/SHA224";
+/// import Array "mo:base/Array";
+///
+/// let data = [097, 098] : [Nat8];
+/// let expect = [
+///     219, 60, 218, 134, 212, 66, 154,
+///     29, 57, 193, 72, 152, 149, 102,
+///     179, 143, 123, 218, 1, 86, 41,
+///     107, 211, 100, 186, 47, 135, 139,
+///     ] : [Nat8];
+///  assert(Array.equal(SHA224.sha224(data), expect, Nat8.equal));
+/// ```
+
+
 import Array "mo:base/Array";
 import Iter "mo:base/Iter";
 import Nat "mo:base/Nat";
