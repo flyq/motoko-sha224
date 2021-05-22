@@ -7,6 +7,7 @@
 /// ```motoko
 /// import SHA224 "mo:sha224/SHA224";
 /// import Array "mo:base/Array";
+/// import Nat8 "mo:base/Nat8";
 ///
 /// let data = [097, 098] : [Nat8];
 /// let expect = [
