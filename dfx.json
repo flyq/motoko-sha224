@@ -10,7 +10,7 @@
         "packtool": "vessel sources"
       }
     },
-    "dfx": "0.7.0-beta.6",
+    "dfx": "0.7.2",
     "networks": {
       "local": {
         "bind": "127.0.0.1:8000",
